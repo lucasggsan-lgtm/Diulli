@@ -4,6 +4,19 @@ import { ArrowRight, CheckCircle2, Activity, HeartPulse, Stethoscope, Dumbbell, 
 export function Servicos() {
   const servicos = [
     {
+      id: "pilates",
+      title: "Pilates Clínico (Mais Procurado)",
+      icon: <PersonStanding className="w-8 h-8" />,
+      description: "Nosso tratamento carro-chefe. Método de condicionamento físico focado na estabilização central, postura e controle do movimento. Oferecemos Planos Bimestrais e Trimestrais para melhor adaptação à sua rotina e resultados mais duradouros.",
+      benefits: [
+        "Melhora da postura e consciência corporal",
+        "Fortalecimento do core (abdômen e lombar)",
+        "Aumento da flexibilidade",
+        "Alívio de tensões musculares"
+      ],
+      indicatedFor: "Prevenção de lesões, melhora postural, gestantes e transição da fisioterapia para atividade física."
+    },
+    {
       id: "ortopedica",
       title: "Fisioterapia Ortopédica",
       icon: <Activity className="w-8 h-8" />,
@@ -41,19 +54,6 @@ export function Servicos() {
         "Melhora da qualidade do sono e humor"
       ],
       indicatedFor: "Pessoas com fibromialgia, dor lombar crônica, enxaquecas tensionais e dores generalizadas."
-    },
-    {
-      id: "pilates",
-      title: "Pilates Clínico",
-      icon: <PersonStanding className="w-8 h-8" />,
-      description: "Método de condicionamento físico focado na estabilização central, postura e controle do movimento.",
-      benefits: [
-        "Melhora da postura e consciência corporal",
-        "Fortalecimento do core (abdômen e lombar)",
-        "Aumento da flexibilidade",
-        "Alívio de tensões musculares"
-      ],
-      indicatedFor: "Prevenção de lesões, melhora postural, gestantes e transição da fisioterapia para atividade física."
     },
     {
       id: "desportiva",

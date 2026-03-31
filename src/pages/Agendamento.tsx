@@ -224,10 +224,12 @@ ${formData.mensagem ? `- Mensagem: ${formData.mensagem}` : ''}`;
                       >
                         <option value="">Selecione um serviço...</option>
                         <option value="Avaliação Inicial">Avaliação Inicial (Primeira Consulta)</option>
+                        <option value="Pilates Clínico - Plano Trimestral">Pilates Clínico - Plano Trimestral</option>
+                        <option value="Pilates Clínico - Plano Bimestral">Pilates Clínico - Plano Bimestral</option>
+                        <option value="Pilates Clínico - Mensal/Avulso">Pilates Clínico - Mensal/Avulso</option>
                         <option value="Fisioterapia Ortopédica">Fisioterapia Ortopédica</option>
                         <option value="Reabilitação Pós-Cirúrgica">Reabilitação Pós-Cirúrgica</option>
                         <option value="Tratamento de Dor Crônica">Tratamento de Dor Crônica</option>
-                        <option value="Pilates Clínico">Pilates Clínico</option>
                         <option value="Fisioterapia Desportiva">Fisioterapia Desportiva</option>
                         <option value="Terapia Manual">Terapia Manual</option>
                         <option value="Outro">Outro / Não tenho certeza</option>

@@ -136,7 +136,24 @@ export function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Service 1 */}
+            {/* Service 1 - Pilates (Most Popular) */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border-2 border-teal-100 relative group">
+              <div className="absolute top-0 right-0 bg-teal-500 text-white px-3 py-1 rounded-bl-xl rounded-tr-xl text-xs font-bold uppercase tracking-wider">
+                Mais Procurado
+              </div>
+              <div className="w-14 h-14 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                <PersonStanding className="w-7 h-7" />
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-3">Pilates Clínico</h4>
+              <p className="text-slate-600 mb-6 line-clamp-3">
+                Nosso tratamento carro-chefe. Método focado na estabilização central, postura e controle do movimento, com planos bimestrais e trimestrais.
+              </p>
+              <Link to="/servicos#pilates" className="text-teal-600 font-medium inline-flex items-center hover:text-teal-700">
+                Ver planos <ArrowRight className="ml-1 w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Service 2 */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
               <div className="w-14 h-14 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
                 <Activity className="w-7 h-7" />
@@ -144,20 +161,6 @@ export function Home() {
               <h4 className="text-xl font-bold text-slate-900 mb-3">Fisioterapia Ortopédica</h4>
               <p className="text-slate-600 mb-6 line-clamp-3">
                 Tratamento especializado para lesões musculares, articulares, tendinites, bursites e dores na coluna.
-              </p>
-              <Link to="/servicos" className="text-teal-600 font-medium inline-flex items-center hover:text-teal-700">
-                Saiba mais <ArrowRight className="ml-1 w-4 h-4" />
-              </Link>
-            </div>
-
-            {/* Service 2 */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
-              <div className="w-14 h-14 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
-                <PersonStanding className="w-7 h-7" />
-              </div>
-              <h4 className="text-xl font-bold text-slate-900 mb-3">Pilates Clínico</h4>
-              <p className="text-slate-600 mb-6 line-clamp-3">
-                Método de condicionamento físico focado na estabilização central, postura, flexibilidade e controle do movimento.
               </p>
               <Link to="/servicos" className="text-teal-600 font-medium inline-flex items-center hover:text-teal-700">
                 Saiba mais <ArrowRight className="ml-1 w-4 h-4" />
@@ -200,6 +203,53 @@ export function Home() {
             >
               Ver todos os serviços
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Planos de Pilates Section */}
+      <section className="py-24 bg-teal-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-teal-300 font-semibold tracking-wide uppercase text-sm mb-3">Pilates Clínico</h2>
+            <h3 className="text-3xl md:text-4xl font-bold mb-6">Planos que se adaptam à sua rotina</h3>
+            <p className="text-lg text-teal-100">
+              O Pilates é nosso tratamento mais procurado para manutenção da saúde, correção postural e prevenção de dores. Escolha o plano ideal para você.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Plano Bimestral */}
+            <div className="bg-teal-700 rounded-3xl p-8 border border-teal-600 shadow-lg relative flex flex-col">
+              <h4 className="text-2xl font-bold mb-2">Plano Bimestral</h4>
+              <p className="text-teal-200 mb-6">Ideal para iniciar sua jornada de transformação e criar o hábito do movimento.</p>
+              <ul className="space-y-4 mb-8 flex-grow">
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-teal-300 mr-3 shrink-0 mt-0.5" /> <span>Aulas 100% personalizadas</span></li>
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-teal-300 mr-3 shrink-0 mt-0.5" /> <span>Avaliação postural inclusa</span></li>
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-teal-300 mr-3 shrink-0 mt-0.5" /> <span>Acompanhamento evolutivo</span></li>
+              </ul>
+              <Link to="/agendamento?servico=Pilates%20Clínico%20-%20Plano%20Bimestral" className="block w-full py-4 px-6 bg-white text-teal-800 font-bold text-center rounded-full hover:bg-teal-50 transition-colors mt-auto">
+                Agendar Plano Bimestral
+              </Link>
+            </div>
+
+            {/* Plano Trimestral */}
+            <div className="bg-white rounded-3xl p-8 border-2 border-teal-400 shadow-xl relative transform md:-translate-y-4 flex flex-col">
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-teal-500 text-white px-4 py-1 rounded-full text-sm font-bold tracking-wider uppercase whitespace-nowrap">
+                Mais Escolhido
+              </div>
+              <h4 className="text-2xl font-bold text-slate-900 mb-2">Plano Trimestral</h4>
+              <p className="text-slate-600 mb-6">O melhor custo-benefício para resultados duradouros e consolidação da sua saúde.</p>
+              <ul className="space-y-4 mb-8 text-slate-700 flex-grow">
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-teal-500 mr-3 shrink-0 mt-0.5" /> <span>Condição com valor especial</span></li>
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-teal-500 mr-3 shrink-0 mt-0.5" /> <span>Aulas 100% personalizadas</span></li>
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-teal-500 mr-3 shrink-0 mt-0.5" /> <span>Avaliação postural inclusa</span></li>
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-teal-500 mr-3 shrink-0 mt-0.5" /> <span>Acompanhamento evolutivo</span></li>
+              </ul>
+              <Link to="/agendamento?servico=Pilates%20Clínico%20-%20Plano%20Trimestral" className="block w-full py-4 px-6 bg-teal-600 text-white font-bold text-center rounded-full hover:bg-teal-700 transition-colors shadow-md mt-auto">
+                Agendar Plano Trimestral
+              </Link>
+            </div>
           </div>
         </div>
       </section>
