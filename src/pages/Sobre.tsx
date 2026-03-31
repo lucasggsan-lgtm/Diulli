@@ -32,10 +32,10 @@ export function Sobre() {
               <h2 className="text-teal-600 font-semibold tracking-wide uppercase text-sm mb-3">A Profissional</h2>
               <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Dra. Diulli Martins</h3>
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                Sou fisioterapeuta apaixonada pela reabilitação humana e pelo movimento. Minha missão é ajudar pessoas a viverem sem dor e recuperarem sua qualidade de vida através de tratamentos individualizados e baseados em evidências científicas.
+                Sou fisioterapeuta apaixonada pela reabilitação humana, pelo movimento e pelo método Pilates. Minha missão é ajudar pessoas a viverem sem dor e recuperarem sua qualidade de vida através de tratamentos individualizados e baseados em evidências científicas.
               </p>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                Com mais de 10 anos de experiência, criei este Studio para oferecer um ambiente acolhedor, onde o tratamento vai além dos sintomas, buscando sempre a causa raiz do problema para proporcionar resultados reais.
+                Com mais de 7 anos de experiência, criei este Studio para oferecer um ambiente acolhedor, onde a fisioterapia e o pilates se unem para tratar além dos sintomas, buscando sempre a causa raiz do problema para proporcionar resultados reais.
               </p>
 
               <div className="space-y-6 mb-10">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Star, Calendar, Activity, HeartPulse, Stethoscope, Users, Award } from "lucide-react";
+import { ArrowRight, CheckCircle2, Star, Calendar, Activity, HeartPulse, Stethoscope, Users, Award, PersonStanding } from "lucide-react";
 import { cn } from "../lib/utils";
 
 export function Home() {
@@ -10,7 +10,7 @@ export function Home() {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1576091160550-2173ff9e5eb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-            alt="Fisioterapia"
+            alt="Fisioterapia e Pilates"
             className="w-full h-full object-cover opacity-10"
             referrerPolicy="no-referrer"
           />
@@ -34,7 +34,7 @@ export function Home() {
                 Volte a viver sem dor e recupere sua <span className="text-teal-600">liberdade de movimento</span>
               </h1>
               <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
-                No nosso studio, você encontra um ambiente acolhedor e tratamento personalizado para dar adeus às dores e voltar a fazer o que ama.
+                No nosso studio, você encontra um ambiente acolhedor, fisioterapia especializada e pilates clínico para dar adeus às dores e voltar a fazer o que ama.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -88,7 +88,7 @@ export function Home() {
                 </div>
                 <div>
                   <p className="text-sm text-slate-500 font-medium">Experiência</p>
-                  <p className="text-xl font-bold text-slate-900">+10 Anos</p>
+                  <p className="text-xl font-bold text-slate-900">+7 Anos</p>
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ export function Home() {
             </div>
             <div className="flex flex-col items-center justify-center p-4">
               <Award className="w-8 h-8 text-teal-600 mb-3" />
-              <h3 className="text-3xl font-bold text-slate-900 mb-1">+10</h3>
+              <h3 className="text-3xl font-bold text-slate-900 mb-1">+7</h3>
               <p className="text-sm text-slate-500 font-medium uppercase tracking-wider">Anos de Experiência</p>
             </div>
             <div className="flex flex-col items-center justify-center p-4">
@@ -131,11 +131,11 @@ export function Home() {
             <h2 className="text-teal-600 font-semibold tracking-wide uppercase text-sm mb-3">Especialidades</h2>
             <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Tratamentos sob medida para sua necessidade</h3>
             <p className="text-lg text-slate-600">
-              Oferecemos uma variedade de serviços fisioterapêuticos utilizando as técnicas mais modernas e comprovadas cientificamente.
+              Oferecemos uma variedade de serviços fisioterapêuticos e pilates utilizando as técnicas mais modernas e comprovadas cientificamente.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Service 1 */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
               <div className="w-14 h-14 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
@@ -153,6 +153,20 @@ export function Home() {
             {/* Service 2 */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
               <div className="w-14 h-14 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                <PersonStanding className="w-7 h-7" />
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-3">Pilates Clínico</h4>
+              <p className="text-slate-600 mb-6 line-clamp-3">
+                Método de condicionamento físico focado na estabilização central, postura, flexibilidade e controle do movimento.
+              </p>
+              <Link to="/servicos" className="text-teal-600 font-medium inline-flex items-center hover:text-teal-700">
+                Saiba mais <ArrowRight className="ml-1 w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Service 3 */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
+              <div className="w-14 h-14 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
                 <HeartPulse className="w-7 h-7" />
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">Reabilitação Pós-Cirúrgica</h4>
@@ -164,7 +178,7 @@ export function Home() {
               </Link>
             </div>
 
-            {/* Service 3 */}
+            {/* Service 4 */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group">
               <div className="w-14 h-14 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
                 <Stethoscope className="w-7 h-7" />

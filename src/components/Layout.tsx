@@ -60,7 +60,7 @@ export function Layout() {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-xl leading-tight text-slate-900">Diulli Martins</span>
-                <span className="text-xs text-teal-600 font-medium tracking-wider uppercase">Studio de Fisioterapia</span>
+                <span className="text-xs text-teal-600 font-medium tracking-wider uppercase">Fisioterapia & Pilates</span>
               </div>
             </Link>
 
@@ -136,7 +136,7 @@ export function Layout() {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-xl leading-tight text-white">Diulli Martins</span>
-                <span className="text-xs text-teal-400 font-medium tracking-wider uppercase">Studio de Fisioterapia</span>
+                <span className="text-xs text-teal-400 font-medium tracking-wider uppercase">Fisioterapia & Pilates</span>
               </div>
             </Link>
             <p className="text-sm text-slate-400 mb-6">
@@ -194,7 +194,7 @@ export function Layout() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-sm text-center text-slate-500">
-          <p>&copy; {new Date().getFullYear()} Studio Diulli Martins. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Studio Diulli Martins Fisioterapia e Pilates. Todos os direitos reservados.</p>
           <p className="mt-2">CREFITO-3/000000-F</p>
         </div>
       </footer>
