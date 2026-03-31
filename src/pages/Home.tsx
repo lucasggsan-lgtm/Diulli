@@ -20,22 +20,28 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="max-w-2xl">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-teal-100 text-teal-800 text-sm font-medium mb-6">
-                <span className="flex h-2 w-2 rounded-full bg-teal-600 mr-2"></span>
-                Atendimento Especializado
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-white text-slate-800 text-sm font-medium mb-6 shadow-sm border border-slate-100">
+                <div className="flex text-yellow-400 mr-2">
+                  <Star className="w-3.5 h-3.5 fill-current" />
+                  <Star className="w-3.5 h-3.5 fill-current" />
+                  <Star className="w-3.5 h-3.5 fill-current" />
+                  <Star className="w-3.5 h-3.5 fill-current" />
+                  <Star className="w-3.5 h-3.5 fill-current" />
+                </div>
+                <span className="font-bold mr-1">5.0</span> no Google Avaliações
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
-                Alívio da dor e recuperação com <span className="text-teal-600">atendimento especializado</span>
+                Volte a viver sem dor e recupere sua <span className="text-teal-600">liberdade de movimento</span>
               </h1>
               <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
-                Fisioterapia personalizada para sua qualidade de vida. Recupere seus movimentos, elimine dores e volte a fazer o que você ama.
+                No nosso studio, você encontra um ambiente acolhedor e tratamento personalizado para dar adeus às dores e voltar a fazer o que ama.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/agendamento"
                   className="inline-flex justify-center items-center px-8 py-4 text-base font-medium rounded-full text-white bg-teal-600 hover:bg-teal-700 transition-colors shadow-lg hover:shadow-xl"
                 >
-                  Agendar Consulta
+                  Quero me livrar da dor
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
                 <a
@@ -44,7 +50,7 @@ export function Home() {
                   rel="noopener noreferrer"
                   className="inline-flex justify-center items-center px-8 py-4 text-base font-medium rounded-full text-teal-700 bg-white border-2 border-teal-100 hover:border-teal-200 hover:bg-teal-50 transition-colors shadow-sm"
                 >
-                  Falar no WhatsApp
+                  Falar direto no WhatsApp
                 </a>
               </div>
               
@@ -61,12 +67,7 @@ export function Home() {
                   ))}
                 </div>
                 <div className="flex flex-col">
-                  <div className="flex text-yellow-400">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <Star key={i} className="w-4 h-4 fill-current" />
-                    ))}
-                  </div>
-                  <span className="font-medium text-slate-700">+500 pacientes recuperados</span>
+                  <span className="font-medium text-slate-700">+500 alunos e pacientes recuperados</span>
                 </div>
               </div>
             </div>

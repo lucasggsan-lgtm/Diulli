@@ -9,7 +9,7 @@ export function Sobre() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Sobre Mim</h1>
           <p className="text-xl text-teal-100 max-w-2xl mx-auto">
-            Conheça a profissional por trás do seu tratamento e a filosofia que guia nosso atendimento.
+            Conheça a profissional por trás do seu tratamento e a filosofia do nosso Studio.
           </p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export function Sobre() {
                 Sou fisioterapeuta apaixonada pela reabilitação humana e pelo movimento. Minha missão é ajudar pessoas a viverem sem dor e recuperarem sua qualidade de vida através de tratamentos individualizados e baseados em evidências científicas.
               </p>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                Com mais de 10 anos de experiência clínica, desenvolvi uma abordagem que vai além do tratamento dos sintomas, buscando sempre a causa raiz do problema para proporcionar resultados duradouros.
+                Com mais de 10 anos de experiência, criei este Studio para oferecer um ambiente acolhedor, onde o tratamento vai além dos sintomas, buscando sempre a causa raiz do problema para proporcionar resultados reais.
               </p>
 
               <div className="space-y-6 mb-10">

@@ -52,9 +52,9 @@ ${formData.mensagem ? `- Mensagem: ${formData.mensagem}` : ''}`;
       {/* Header */}
       <section className="bg-teal-700 py-16 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-white mb-4">Agende sua Consulta</h1>
+          <h1 className="text-4xl font-bold text-white mb-4">Agende sua Avaliação</h1>
           <p className="text-lg text-teal-100 max-w-2xl mx-auto">
-            Dê o primeiro passo para uma vida sem dor. Preencha o formulário abaixo e entraremos em contato para confirmar seu horário.
+            Descubra a causa da sua dor e inicie seu tratamento. Preencha o formulário ou fale direto pelo WhatsApp.
           </p>
         </div>
       </section>
@@ -62,6 +62,28 @@ ${formData.mensagem ? `- Mensagem: ${formData.mensagem}` : ''}`;
       {/* Main Content */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          {/* Fast Track WhatsApp */}
+          <div className="bg-white rounded-3xl shadow-sm border border-teal-100 p-8 mb-8 text-center flex flex-col items-center">
+            <h2 className="text-2xl font-bold text-slate-900 mb-2">Prefere rapidez?</h2>
+            <p className="text-slate-600 mb-6">Agende direto pelo WhatsApp em menos de 1 minuto.</p>
+            <a
+              href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex justify-center items-center px-8 py-4 text-lg font-bold rounded-full text-white bg-green-500 hover:bg-green-600 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+            >
+              <MessageSquare className="w-6 h-6 mr-2" />
+              Agendar pelo WhatsApp
+            </a>
+          </div>
+
+          <div className="flex items-center justify-center mb-8">
+            <div className="h-px bg-slate-200 flex-1 max-w-[100px]"></div>
+            <span className="px-4 text-sm text-slate-400 font-medium uppercase tracking-wider">Ou preencha seus dados</span>
+            <div className="h-px bg-slate-200 flex-1 max-w-[100px]"></div>
+          </div>
+
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-5">
               

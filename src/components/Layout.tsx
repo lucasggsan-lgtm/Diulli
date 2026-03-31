@@ -35,7 +35,7 @@ export function Layout() {
       <div className="bg-teal-700 text-teal-50 py-2 px-4 text-sm hidden md:block">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-6">
-            <span className="flex items-center"><MapPin className="w-4 h-4 mr-2" /> Clínica Central, São Paulo - SP</span>
+            <span className="flex items-center"><MapPin className="w-4 h-4 mr-2" /> Studio Diulli Martins, São Paulo - SP</span>
             <span className="flex items-center"><Phone className="w-4 h-4 mr-2" /> (11) 99999-9999</span>
           </div>
           <div className="flex items-center space-x-4">
@@ -60,7 +60,7 @@ export function Layout() {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-xl leading-tight text-slate-900">Diulli Martins</span>
-                <span className="text-xs text-teal-600 font-medium tracking-wider uppercase">Fisioterapia</span>
+                <span className="text-xs text-teal-600 font-medium tracking-wider uppercase">Studio de Fisioterapia</span>
               </div>
             </Link>
 
@@ -80,9 +80,9 @@ export function Layout() {
               ))}
               <Link
                 to="/agendamento"
-                className="bg-teal-600 text-white px-6 py-2.5 rounded-full font-medium hover:bg-teal-700 transition-colors shadow-sm hover:shadow-md"
+                className="bg-teal-600 text-white px-6 py-2.5 rounded-full font-medium hover:bg-teal-700 transition-colors shadow-sm hover:shadow-md flex items-center"
               >
-                Agendar Consulta
+                Agendar Avaliação
               </Link>
             </nav>
 
@@ -115,7 +115,7 @@ export function Layout() {
               to="/agendamento"
               className="bg-teal-600 text-white px-6 py-3 rounded-lg font-medium text-center hover:bg-teal-700 transition-colors"
             >
-              Agendar Consulta
+              Agendar Avaliação
             </Link>
           </div>
         )}
@@ -136,11 +136,11 @@ export function Layout() {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-xl leading-tight text-white">Diulli Martins</span>
-                <span className="text-xs text-teal-400 font-medium tracking-wider uppercase">Fisioterapia</span>
+                <span className="text-xs text-teal-400 font-medium tracking-wider uppercase">Studio de Fisioterapia</span>
               </div>
             </Link>
             <p className="text-sm text-slate-400 mb-6">
-              Atendimento humanizado, profissional e focado na sua recuperação e qualidade de vida.
+              Um ambiente acolhedor e exclusivo, focado na sua recuperação e em devolver a sua qualidade de vida.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-teal-600 hover:text-white transition-colors">
@@ -171,7 +171,7 @@ export function Layout() {
               <li><Link to="/servicos" className="hover:text-teal-400 transition-colors">Fisioterapia Ortopédica</Link></li>
               <li><Link to="/servicos" className="hover:text-teal-400 transition-colors">Reabilitação Pós-Cirúrgica</Link></li>
               <li><Link to="/servicos" className="hover:text-teal-400 transition-colors">Tratamento de Dor</Link></li>
-              <li><Link to="/servicos" className="hover:text-teal-400 transition-colors">Alongamento e Mobilidade</Link></li>
+              <li><Link to="/servicos" className="hover:text-teal-400 transition-colors">Pilates Clínico</Link></li>
             </ul>
           </div>
 
@@ -194,21 +194,27 @@ export function Layout() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-sm text-center text-slate-500">
-          <p>&copy; {new Date().getFullYear()} Diulli Martins Fisioterapia. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Studio Diulli Martins. Todos os direitos reservados.</p>
           <p className="mt-2">CREFITO-3/000000-F</p>
         </div>
       </footer>
 
       {/* Floating WhatsApp Button */}
-      <a
-        href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação."
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 hover:scale-110 transition-all duration-300"
-        aria-label="Falar no WhatsApp"
-      >
-        <MessageCircle className="w-7 h-7" />
-      </a>
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        <div className="bg-white text-slate-700 text-xs font-medium py-1.5 px-3 rounded-lg shadow-md mb-2 mr-2 animate-bounce border border-slate-100">
+          Agende pelo WhatsApp!
+        </div>
+        <a
+          href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative flex w-14 h-14 bg-green-500 text-white rounded-full items-center justify-center shadow-lg hover:bg-green-600 hover:scale-110 transition-all duration-300"
+          aria-label="Falar no WhatsApp"
+        >
+          <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-40 animate-ping"></span>
+          <MessageCircle className="w-7 h-7 relative z-10" />
+        </a>
+      </div>
     </div>
   );
 }
